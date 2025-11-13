@@ -1,0 +1,262 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d1a;
+  color: #f0f0f5;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(13, 13, 26, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #b197fc;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #dcdcf9;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #b197fc;
+  text-shadow: 0 0 10px #b197fc;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d0d1a, #1a1443, #2a0a5e);
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(178, 97, 255, 0.6);
+}
+
+.hero-content h1 span {
+  color: #b197fc;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.btn {
+  background: linear-gradient(90deg, #3f37c9, #7209b7);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(114, 9, 183, 0.4);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #4cc9f0, #7209b7);
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #121229;
+}
+
+.about h2 {
+  color: #b197fc;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 100%;
+  border: 3px solid #7209b7;
+  box-shadow: 0 0 20px rgba(114, 9, 183, 0.5);
+}
+
+.about-content p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* Skills */
+.skills {
+  padding: 100px 50px;
+  background: #0d0d1a;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #b197fc;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills li {
+  padding: 10px 0;
+  color: #dcdcf9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Projects */
+.projects {
+  padding: 100px 50px;
+  background: #121229;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #b197fc;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(114, 9, 183, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #cdb4db;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Contact */
+.contact {
+  padding: 100px 50px;
+  background: #0d0d1a;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #b197fc;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  color: #dcdcf9;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #b197fc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #090912;
+  color: #ccc;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ffffff1a;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(114, 9, 183, 0.15), transparent 60%),
+              radial-gradient(circle at 70% 70%, rgba(63, 55, 201, 0.15), transparent 60%);
+  animation: moveGlow 8s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes moveGlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-10%, -10%); }
+}
